@@ -1,5 +1,5 @@
 {
-  "name": "vue-tencent-captcha",
+  "name": "@carpenter/vue-tencent-captcha",
   "version": "0.0.1",
   "private": true,
   "scripts": {

@@ -1,21 +1,23 @@
-# qq-captcha
+# @carpenter/vue-tencent-captcha
 
-## Project setup
+
+| 成员        | 说明           | 类型               | 默认值       |
+|------------|----------------|--------------------|--------------|
+| appid | appid | String | 无 |
+| callback | 验证成功的回调函数 | function | 无 |
+
 ```
-npm install
+// 隐藏验证码
+this.$root.captcha.destroy(); 
+// 显示验证码
+this.$root.captcha.show(); 
+
+<vueTencentCaptcha appid="2028109764" @callback="captchaCallback">
+  点我啊
+</vueTencentCaptcha>
+// 回调
+captchaCallback(res) {
+  console.log(res);
+}
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```

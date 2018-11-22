@@ -1,10 +1,13 @@
 # @carpenter/vue-tencent-captcha
 
+### 安装
+> npm i @carpenter/vue-tencent-captcha
 
 | 成员        | 说明           | 类型               | 默认值       |
 |------------|----------------|--------------------|--------------|
 | appid | appid | String | 无 |
 | callback | 验证成功的回调函数 | function | 无 |
+
 
 ```
 // 隐藏验证码

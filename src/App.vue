@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <template v-if="show">
-      <Captcha appid="2028109764" @callback="captchaCallback">
+      <Captcha appid="xxxxx" @callback="captchaCallback">
         点我啊
       </Captcha>
     </template>

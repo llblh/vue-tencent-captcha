@@ -1,6 +1,6 @@
 {
   "name": "@carpenter/vue-tencent-captcha",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "腾讯验证码 vue 组件",
   "keywords": [
     "验证码",

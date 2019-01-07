@@ -2,13 +2,17 @@
   "name": "@carpenter/vue-tencent-captcha",
   "version": "0.0.2",
   "description": "腾讯验证码 vue 组件",
-  "keywords": ["验证码", "腾讯验证码", "vue 验证码"],
+  "keywords": [
+    "验证码",
+    "腾讯验证码",
+    "vue 验证码"
+  ],
   "author": "旅行",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-lib": "vue-cli-service build --target lib ./src/lib/index.js",
+    "build": "bash deploy.sh",
+    "build:all": "vue-cli-service build --target lib ./src/lib/index.js",
     "lint": "vue-cli-service lint"
   },
   "repository": {
@@ -16,17 +20,16 @@
     "url": "https://github.com/llblh/vue-tencent-captcha.git"
   },
   "main": "./dist/vue-tencent-captcha.umd.min.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "vue": "^2.5.17",
-    "@vue/cli-plugin-babel": "^3.0.0",
-    "@vue/cli-plugin-eslint": "^3.0.0",
-    "@vue/cli-service": "^3.0.0",
-    "@vue/eslint-config-airbnb": "^3.0.3",
-    "less": "^3.0.4",
+    "@vue/cli-plugin-babel": "^3.2.2",
+    "@vue/cli-plugin-eslint": "^3.2.2",
+    "@vue/cli-service": "^3.2.3",
+    "@vue/eslint-config-airbnb": "^3.0.5",
+    "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue": "^2.5.21",
+    "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
     "root": true,

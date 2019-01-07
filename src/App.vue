@@ -31,13 +31,13 @@ export default {
       if (!newVal) {
         this.$root.captcha.destroy();
       }
-    }
+    },
   },
   methods: {
     captchaCallback(res) {
       console.log(res);
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -10,4 +10,7 @@ yarn-error.log*
 
 test
 docs
+src
+public
+dist/demo.html
 node_modules

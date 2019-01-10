@@ -1,6 +1,6 @@
 {
   "name": "@carpenter/vue-tencent-captcha",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "腾讯验证码 vue 组件",
   "keywords": [
     "验证码",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/llblh/vue-tencent-captcha.git"
   },
-  "main": "./dist/vue-tencent-captcha.umd.min.js",
+  "main": "./dist/@carpenter/vue-tencent-captcha.umd.min.js",
   "dependencies": {},
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.2",

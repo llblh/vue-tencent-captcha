@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <template v-if="show">
-      <Captcha appid="xxxxx" @callback="captchaCallback">
+      <Captcha appid="xxxxx" :options="options" @callback="captchaCallback">
         点我啊
       </Captcha>
     </template>
@@ -16,6 +16,9 @@ export default {
   data() {
     return {
       show: true,
+      options: {
+        bizState: '11111111111'
+      },
     };
   },
   components: {

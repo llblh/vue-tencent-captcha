@@ -14,6 +14,12 @@ export default {
       type: String,
       default: '',
     },
+    options: {
+      type: Object,
+      default() {
+        return {};
+      },
+    },
   },
   mounted() {
     if (typeof window.TencentCaptcha !== 'function') {
@@ -33,7 +39,7 @@ export default {
     init() {
       const captcha = new window.TencentCaptcha(this.$refs.captcha, this.appid, (res) => {
         this.$emit('callback', res);
-      });
+      }, { ...this.options });
       this.$root.captcha = captcha;
     },
   },

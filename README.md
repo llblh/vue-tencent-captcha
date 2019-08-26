@@ -18,6 +18,32 @@
 | options    | 配置参数         | object              | 无          |
 
 ### 示例
+## 1. 配置node 环境变量 ```TENCENT_CAPTCHA_APPID``` 则组件使用时可以省略。
+#### vue:
+```
+编辑env文件 添加：
+process.env.TENCENT_CAPTCHA_APPID: 'xxxx'
+
+```
+
+#### nuxt:
+```
+export default {
+  env: {
+    TENCENT_CAPTCHA_APPID: 'xxxx'
+  }
+};
+```
+
+## 2. 配置组件 ```appid``` 默认覆盖 ```TENCENT_CAPTCHA_APPID```
+``` html
+<vueTencentCaptcha :options="options" @callback="captchaCallback">
+  点我啊
+</vueTencentCaptcha>
+
+<vueTencentCaptcha appid="2028109764" @callback="captchaCallback" />
+```
+
 ``` html
 <vueTencentCaptcha appid="2028109764" :options="options" @callback="captchaCallback">
   点我啊

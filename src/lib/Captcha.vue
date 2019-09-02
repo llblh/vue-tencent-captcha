@@ -12,7 +12,7 @@ export default {
   props: {
     appid: {
       type: String,
-      default: '',
+      default: process.env.TENCENT_CAPTCHA_APPID || '',
     },
     options: {
       type: Object,

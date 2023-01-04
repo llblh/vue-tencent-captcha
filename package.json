@@ -22,9 +22,9 @@
   "main": "./dist/@carpenter/vue-tencent-captcha.umd.min.js",
   "dependencies": {},
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
+    "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-airbnb": "^3.0.5",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
